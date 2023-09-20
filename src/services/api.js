@@ -1,11 +1,10 @@
 import axios from 'axios'
-
-const API_URL =  "https://fsbackend-d4n3.onrender.com/"
+import BASE_URL from '../helperURL'
 
 export const UploadFile = async (data) => {
     try{
-        let response = await axios.post(`${API_URL}/upload`, data)
-        console.log(API_URL)
+        let response = await axios.post(`${BASE_URL}/upload`, data)
+        //console.log(BASE_URL)
         return response
     }
     catch(error){
