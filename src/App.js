@@ -30,7 +30,7 @@ function App() {
         data.append("file", fileName);
         let response = await UploadFile(data);
         setResult(response.data.path)
-        console.log(fileName, result)
+        //console.log(fileName, result)
         setShow(true);
       }
     }

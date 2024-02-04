@@ -4,7 +4,7 @@ import BASE_URL from '../helperURL'
 export const UploadFile = async (data) => {
     try{
         let response = await axios.post(`${BASE_URL}/upload`, data)
-        //console.log(BASE_URL)
+        console.log(response)
         return response
     }
     catch(error){
